@@ -1,0 +1,6 @@
+{
+  "name": "auto-learner",
+  "version": "1.0.0",
+  "description": "OpenClaw auto-learning and evolution",
+  "main": "index.js"
+}

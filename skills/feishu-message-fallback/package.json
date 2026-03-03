@@ -1,0 +1,6 @@
+{
+  "name": "feishu-message-fallback",
+  "version": "1.0.0",
+  "description": "Feishu message delivery fallback chain",
+  "main": "index.js"
+}

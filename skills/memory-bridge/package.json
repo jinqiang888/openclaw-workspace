@@ -1,0 +1,6 @@
+{
+  "name": "memory-bridge",
+  "version": "1.0.0",
+  "description": "Cross-session memory continuity",
+  "main": "index.js"
+}

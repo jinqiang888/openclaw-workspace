@@ -1,0 +1,6 @@
+{
+  "name": "ai-news-daily",
+  "version": "1.0.0",
+  "description": "AI hot news daily digest",
+  "main": "index.js"
+}

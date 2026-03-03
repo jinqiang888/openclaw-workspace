@@ -1,0 +1,21 @@
+# 敏感文件 - 不要提交
+.env
+.env.*
+*.key
+*.pem
+*.p12
+
+# 缓存和临时文件
+.cache/
+*.log
+*.tmp
+.DS_Store
+
+# OpenClaw 内部缓存
+.openclaw/cache/
+
+# 向量索引缓存 (可重新生成)
+.memory-index/
+
+# node_modules
+node_modules/

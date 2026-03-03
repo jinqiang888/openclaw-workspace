@@ -1,0 +1,6 @@
+{
+  "name": "scholar-graph",
+  "version": "1.0.0",
+  "description": "Academic research assistant - literature search, PDF analysis, knowledge graph",
+  "main": "index.js"
+}

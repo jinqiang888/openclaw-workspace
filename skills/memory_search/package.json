@@ -1,0 +1,7 @@
+{
+  "name": "memory_search",
+  "version": "1.0.0",
+  "description": "Local memory search with multi-engine support",
+  "main": "index.js",
+  "type": "commonjs"
+}
