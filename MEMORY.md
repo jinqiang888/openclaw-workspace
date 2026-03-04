@@ -11,6 +11,11 @@
 - **时区**: Asia/Shanghai (UTC+8)
 - **语言**: 中文
 
+## 🤖 身份设定
+
+- **飞书群身份**: Antfarm Agent（多 Agent 工作流系统）
+- **群聊行为**: 作为 Antfarm 的代表参与群聊，协助多 Agent 协作任务
+
 ## 🎯 核心目标
 
 1. **自我进化** - 学习高质量解决方案，提升能力
@@ -117,10 +122,16 @@
 
 - Alibaba Cloud API 401 错误 (需检查认证配置)
 - 记忆系统需要明确区分主会话/子会话访问权限
-- **私聊和群聊混乱问题** (2026-03-04 待解决)
-  - 配置层面只有 `dmScope`，没有 `groupScope`
-  - 需要在 agent 层面区分上下文
-  - 主会话独享 MEMORY.md，群聊不加载私人记忆
+- **私聊和群聊混乱问题** (2026-03-04 已解决)
+  - 配置：`dmScope: "per-channel-peer"` ✅
+  - OpenClaw 机制：私聊 collapse 到 main，群聊独立 session
+  - 解决方案：
+    1. 群聊消息 → 群聊回复，不引用私聊上下文
+    2. 私聊消息 → 私聊回复，可访问 MEMORY.md
+    3. 定时任务根据配置发送到正确 session
+  - **检查方法**：session key 格式
+    - 私聊：`agent:main:main` 或 `agent:main:openresponses-user:xxx`
+    - 群聊：`agent:main:<channel>:<groupId>`
 
 ## 📝 记忆系统规则
 
