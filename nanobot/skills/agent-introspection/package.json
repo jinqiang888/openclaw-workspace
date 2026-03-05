@@ -1,0 +1,6 @@
+{
+  "name": "agent-introspection",
+  "version": "1.0.0",
+  "description": "AI Agent Introspection and Auto-Fix",
+  "main": "index.js"
+}
