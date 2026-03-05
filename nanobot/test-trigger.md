@@ -1,1 +1,1 @@
-trigger: test message from nanobot
+test message from nanobot
