@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.26",
+    "lastTouchedAt": "2026-03-05T11:26:55.819Z"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/home/admin/.openclaw/workspace/nanobot-standalone",
+      "compaction": {
+        "mode": "safeguard"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "feishu": {
+      "accounts": {
+        "default": {
+          "appId": "cli_a92d0073a838dbb5",
+          "appSecret": "s5wbmYJcg8WZL0eBeG6f0cstPw3HjR6G",
+          "domain": "feishu",
+          "enabled": true,
+          "connectionMode": "websocket",
+          "verificationToken": "qNPifE8Yg0jJOkVYoK2p8xd562WnOitS",
+          "encryptKey": "rUqCUphf1kGZOpSKLFiCAdBMQI8z4izR"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 16196,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "41ad7383d5104538701f3c44a8c3fe017f7a553198f83d42"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}
