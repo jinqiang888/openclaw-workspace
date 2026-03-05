@@ -188,7 +188,7 @@ async function getTavilyAINews() {
     const searchQuery = 'AI artificial intelligence news latest 2026';
     
     // Tavily API Key
-    const apiKey = process.env.TAVILY_API_KEY || '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';
+    const apiKey = config.apiKey || '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';
     
     // 调用 Tavily API
     const response = await fetch('https://api.tavily.com/search', {
